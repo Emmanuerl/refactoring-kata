@@ -6,12 +6,12 @@
     "noImplicitAny": false,
     "sourceMap": true,
     "outDir": "./dist",
-    "rootDir": "./app",
+    "rootDir": "./src",
     "baseUrl": "./",
     "noUnusedLocals": true,
     "paths": {
       "@/*": [
-        "app/*"
+        "src/*"
       ]
     },
     "typeRoots": ["./node_modules/@types"],
@@ -21,7 +21,7 @@
     "node_modules",
     "tests"
   ],
-  "include": ["typings/**/*.d.ts", "app/**/*"],
+  "include": ["typings/**/*.d.ts", "src/**/*"],
   "ts-node": {
     "files": true
   }
