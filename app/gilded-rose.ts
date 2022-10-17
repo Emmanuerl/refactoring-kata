@@ -4,7 +4,7 @@ import {
   ConjuredManager,
   DefaultManager,
   SulfurasManager,
-} from "./items";
+} from "@/items";
 import {
   ItemManager,
   ItemManagerConstructor,
