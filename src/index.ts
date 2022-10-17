@@ -10,7 +10,7 @@ async function main() {
 
     app.start();
   } catch (err: any) {
-    console.log(err.name);
+    console.log(err);
   }
 }
 
