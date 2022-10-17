@@ -1,4 +1,17 @@
-import { Item } from "@/gilded-rose";
+/**
+ * model represenation of an item
+ */
+export class Item {
+  name: string;
+  sellIn: number;
+  quality: number;
+
+  constructor(name: string, sellIn: number, quality: number) {
+    this.name = name;
+    this.sellIn = sellIn;
+    this.quality = quality;
+  }
+}
 
 /**
  * base class for all types of items in the shop.
@@ -15,14 +28,7 @@ export abstract class ItemManager {
   abstract updateQuality(): number;
 }
 
-const recognizedItemNames = <const>[
-  "Aged Brie",
-  "Backstage passes to a TAFKAL80ETC concert",
-  "Sulfuras, Hand of Ragnaros",
-  "Conjured Mana Cake",
-];
-export type RecognizedItemName = typeof recognizedItemNames[number];
+/**
+ * Base constructor for all child classes of the ItemManager class
+ */
 export type ItemManagerConstructor = new (item: Item) => ItemManager;
-
-export const MIN_QUALITY = 0;
-export const MAX_QUALITY = 50;

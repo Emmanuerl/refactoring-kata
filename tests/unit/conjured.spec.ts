@@ -1,5 +1,4 @@
-import { ConjuredManager } from "../../src/items";
-import { Item } from "../../src/gilded-rose";
+import { ConjuredManager, Item } from "../../src/items";
 
 describe("Conjured->updateQuality", () => {
   it("Quality should decrease by 2", () => {

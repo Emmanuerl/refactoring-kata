@@ -1,4 +1,4 @@
-import { ItemManager } from "../internals/items";
+import { ItemManager } from "./item.model";
 
 export class SulfurasManager extends ItemManager {
   /**

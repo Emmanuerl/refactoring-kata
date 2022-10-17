@@ -1,5 +1,4 @@
-import { DefaultManager } from "../../src/items";
-import { Item } from "../../src/gilded-rose";
+import { DefaultManager, Item } from "../../src/items";
 
 describe("Default->updateQuality", () => {
   it("Quality should be decrease by 1 if item hasn't passed it's sell by date", () => {

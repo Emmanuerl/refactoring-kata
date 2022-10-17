@@ -4,26 +4,11 @@ import {
   ConjuredManager,
   DefaultManager,
   SulfurasManager,
-} from "./items";
-import {
+  Item,
   ItemManager,
   ItemManagerConstructor,
-  MAX_QUALITY,
-  MIN_QUALITY,
-  RecognizedItemName,
-} from "@/internals/items";
-
-export class Item {
-  name: string;
-  sellIn: number;
-  quality: number;
-
-  constructor(name, sellIn, quality) {
-    this.name = name;
-    this.sellIn = sellIn;
-    this.quality = quality;
-  }
-}
+} from "@/items";
+import { MAX_QUALITY, MIN_QUALITY, RecognizedItemName } from "@/internals/item";
 
 export class GildedRose {
   items: Array<Item>;

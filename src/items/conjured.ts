@@ -1,4 +1,5 @@
-import { ItemManager, MIN_QUALITY } from "../internals/items";
+import { ItemManager } from "./item.model";
+import { MIN_QUALITY } from "@/internals/item";
 
 export class ConjuredManager extends ItemManager {
   /**

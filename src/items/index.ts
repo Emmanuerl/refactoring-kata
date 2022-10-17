@@ -3,3 +3,4 @@ export * from "./backstage";
 export * from "./conjured";
 export * from "./default";
 export * from "./sulfuras";
+export * from "./item.model";

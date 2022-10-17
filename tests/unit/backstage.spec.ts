@@ -1,5 +1,4 @@
-import { BackStageManager } from "../../src/items";
-import { Item } from "../../src/gilded-rose";
+import { BackStageManager, Item } from "../../src/items";
 
 describe("BackStage->updateQuality", () => {
   it("Quality should increase by 1 as the concert draws nearer", () => {

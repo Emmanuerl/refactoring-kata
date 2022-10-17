@@ -1,4 +1,5 @@
-import { ItemManager, MAX_QUALITY } from "../internals/items";
+import { ItemManager } from "./item.model";
+import { MAX_QUALITY } from "@/internals/item";
 
 export class BackStageManager extends ItemManager {
   /**
