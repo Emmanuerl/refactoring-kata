@@ -12,11 +12,6 @@ async function main() {
   } catch (err: any) {
     console.log(err.name);
   }
-
-  // close log stream after succesful/failed process
-  fileLogger.close();
-
-  process.exit();
 }
 
 main();
