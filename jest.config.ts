@@ -11,4 +11,7 @@ export default {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   testEnvironment: "node",
   verbose: true,
+  moduleNameMapper: {
+    "@/(.*)": "<rootDir>/app/$1",
+  },
 };
