@@ -1,4 +1,4 @@
-import { GildedRose, Item } from "../../app/gilded-rose";
+import { GildedRose, Item } from "../../src/gilded-rose";
 
 describe("GildedRose->updateQuality", () => {
   it("Quality should never go below 0", () => {

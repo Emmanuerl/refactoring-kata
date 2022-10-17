@@ -1,5 +1,5 @@
-import { AgedBrieManager } from "../../app/items";
-import { Item } from "../../app/gilded-rose";
+import { AgedBrieManager } from "../../src/items";
+import { Item } from "../../src/gilded-rose";
 
 describe("AgedBrie->updateQuality", () => {
   const NAME = "Aged Brie";

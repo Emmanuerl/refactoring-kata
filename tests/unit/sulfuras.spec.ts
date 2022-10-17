@@ -1,5 +1,5 @@
-import { Item } from "../../app/gilded-rose";
-import { SulfurasManager } from "../../app/items";
+import { Item } from "../../src/gilded-rose";
+import { SulfurasManager } from "../../src/items";
 
 describe("Sulfuras->updateQuality", () => {
   it("Quality should remain unchanged", () => {

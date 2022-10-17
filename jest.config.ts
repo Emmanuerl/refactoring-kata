@@ -12,6 +12,6 @@ export default {
   testEnvironment: "node",
   verbose: true,
   moduleNameMapper: {
-    "@/(.*)": "<rootDir>/app/$1",
+    "@/(.*)": "<rootDir>/src/$1",
   },
 };
