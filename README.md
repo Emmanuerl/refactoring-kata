@@ -18,16 +18,17 @@ $ cd refactoring-kata
 
 # install dependencies
 $ npm install
-
+#
+# Create two terminal windows with both windows in the root directory of the applciation
 # terminal 1                        |  terminal 2
 #                                   |
-# run build in watch mode           |  start server in watch mode
-$ npm run watch                     |  $ npm run start:dev -- I J # where I and J are the number of update and HTTP calls respectively
+# run build in watch mode           |  start application in watch mode
+$ npm run build:watch               |  $ npm run start:dev -- I J # where I and J are the number of update and HTTP calls respectively
 #                                   |
 #                                   |
 #                                   |
-# run build                         |  run server
-$ npm run compile                   |  $ npm run start -- I J # where I and J are the number of update and HTTP calls respectively
+# run build                         |  start application
+$ npm run build                     |  $ npm start -- I J # where I and J are the number of update and HTTP calls respectively
 ```
 
 ### How to setup and run locally
