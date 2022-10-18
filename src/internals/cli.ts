@@ -1,3 +1,8 @@
+/**
+ * CLI validator for managing CLI inputs
+ * Throws error if requirements are not met
+ * @returns
+ */
 function validateArgs(): CliArguments {
   const args = [...process.argv];
 
@@ -29,6 +34,10 @@ export class InvalidCLIArguments extends Error {
   }
 }
 
+/**
+ * CLI arguments model to be returned after successful validation and
+ * used by the application
+ */
 export interface CliArguments {
   numberOfUpdates: number;
   numberOfHttpCalls: number;

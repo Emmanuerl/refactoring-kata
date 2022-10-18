@@ -20,6 +20,13 @@ export class Application {
     this.sessionId = randomUUID();
   }
 
+  /**
+   * Start command of the application.
+   * takes advantage of reference types and runs n number of updates in random order
+   * since it's reference type and the order of events isn't needed in the output, random
+   * order of updates should work
+   * @returns
+   */
   async start(): Promise<Item[][]> {
     this.fileLogger.log(`session ${this.sessionId} has been initiated`);
 
@@ -38,7 +45,13 @@ export class Application {
     return Promise.all(jobs);
   }
 
-  async makeHTTPCals(n: number): Promise<void> {
+  /**
+   * Makes HTTP calls recursively until all responses are negative.
+   * For every j number of calls, it logs j
+   * where i is the total number of calls made and j is the number of positive responses
+   * @param n
+   */
+  private async makeHTTPCals(n: number): Promise<void> {
     const calls: Promise<APIResponse>[] = new Array(n).fill(this.http.get());
     const positiveResponses = (await Promise.all(calls)).filter(
       (r) => r.answer === "yes"

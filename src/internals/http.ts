@@ -1,5 +1,8 @@
 import * as https from "https";
 
+/**
+ * custome HTTP agent for making HTTP requests
+ */
 export class HttpAgent {
   /**
    * makes a get Request to the provided url
@@ -25,6 +28,9 @@ export class HttpAgent {
   }
 }
 
+/**
+ * custom expected response from GET https://yesno.wtf/api
+ */
 export interface APIResponse {
   answer: "no" | "yes";
   forced: boolean;

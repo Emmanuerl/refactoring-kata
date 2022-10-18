@@ -6,6 +6,9 @@ import { cliArguments } from "./internals/cli";
 import { fileLogger } from "./internals/file-logger";
 import { sampleItems } from "./internals/item";
 
+/**
+ * CLI's entry point
+ */
 async function main() {
   try {
     const httpAgent = new HttpAgent();
@@ -15,6 +18,8 @@ async function main() {
     fileLogger.log(`End of session ${app.sessionId}`);
 
     console.log(result);
+
+    fileLogger.close();
   } catch (err: any) {
     console.log(err);
   }

@@ -4,11 +4,11 @@
   "description": "Gilded Rose kata in TypeScript",
   "scripts": {
     "precompile": "rimraf dist",
-    "compile": "tsc -p ./tsconfig.json",
-    "watch": "tsc -p ./tsconfig.json -w",
+    "build": "tsc -p ./tsconfig.json",
+    "build:watch": "tsc -p ./tsconfig.json -w",
     "test": "jest",
     "start:dev": "nodemon dist",
-    "test:watch": "jest --watchAll"
+    "start": "node dist"
   },
   "license": "MIT",
   "private": true,

@@ -1,33 +1,44 @@
-# Gilded Rose
+# Gilded Rose Kata Refactor
 
-This is the Gilded Rose kata in TypeScript.
+My solution to the [Refactoring kata challenge](https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/main/GildedRoseRequirements.txt) while adding a CLI for handling extra workloads before running updates
 
-## Getting started
+### Requirements
 
-Install dependencies
+- Node.JS and NPM (application was built using node V16)
+- Git (recommended but not mandatory)
 
-```sh
-npm install
-```
-
-## Running app
-
-_You may need to install `ts-node`_
+### How to setup and run locally
 
 ```sh
-npx ts-node test/golden-master-text-test.ts
+# clone repository
+$ git clone git@github.com:Emmanuerl/refactoring-kata.git
+
+# cd into path
+$ cd refactoring-kata
+
+# install dependencies
+$ npm install
+
+# terminal 1                        |  terminal 2
+#                                   |
+# run build in watch mode           |  start server in watch mode
+$ npm run watch                     |  $ npm run start:dev -- I J # where I and J are the number of update and HTTP calls respectively
+#                                   |
+#                                   |
+#                                   |
+# run build                         |  run server
+$ npm run compile                   |  $ npm run start -- I J # where I and J are the number of update and HTTP calls respectively
 ```
 
-Or with number of days as args:
+### How to setup and run locally
+
+This application uses Jest framework for unit and integration testing
 
 ```sh
-npx ts-node test/golden-master-text-test.ts 10
+# to run tests
+$ npm test
 ```
 
-## Running tests
+### Contributors
 
-To run all tests
-
-```sh
-npm test
-```
+- [Chukwuemeka Chukwurah](https://github.com/emmanuerl)
